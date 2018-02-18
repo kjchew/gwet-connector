@@ -15,6 +15,7 @@
     "fuelsdk-node": "^2.1.0",
     "jsonpath-object-transform": "^1.0.4",
     "lodash": "^4.17.4",
+    "moment": "^2.20.1",
     "xml-js": "^1.6.2"
   },
   "devDependencies": {

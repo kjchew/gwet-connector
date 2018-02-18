@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Registration>
+  <RegistrationKey>e303e994-b848-4374-9a3e-67a9f9ef76b2</RegistrationKey>
+  <Event_ID>12345</Event_ID>
+  <MCID>e9bb0113-7e3b-42b6-8431-ff0abb21c635</MCID>
+  <LaunchingURL>http://uat.webcast-editor-tool3.msd.com/ewebcast/pop_event.aspx?CourseID=12015&amp;EventsID=12345&amp;UserID=3119&amp;LangCode=es_ES&amp;CompanyID=10</LaunchingURL>
+  <RegisterCountry>Spain</RegisterCountry>
+  <UserID>3119</UserID>
+  <First_Name>Webcast Test</First_Name>
+  <Last_Name>Team Test</Last_Name>
+  <EMAILID>webcastteam@jzero.com</EMAILID>
+  <LanguageCode>es_ES</LanguageCode>
+  <RegisterDate>27/06/2017 06:22:20</RegisterDate>
+  <Waitlisted>No</Waitlisted>
+  <AttendedLive>No</AttendedLive>
+  <AttendedArchive>No</AttendedArchive>
+  <Duration>0</Duration>
+  <TestPassed>No</TestPassed>
+  <eCME_STATUS />
+  <eCME_Credit />
+  <eCME_Cert />
+  <eCME_Certlink />
+  <Event_Test>No</Event_Test>
+</Registration>

@@ -3,6 +3,7 @@
 var gwetConnector = require('./lib/gwet-connector');
 var gwetXmlParser = gwetConnector.xmlParser;
 var gwetObjectTransformation = gwetConnector.transfom;
+var gwetObjTemplate = gwetConnector.template;
 var sfmcConnector = require('./lib/sfmc-connector');
 var addRowOp = sfmcConnector.addRow;
 
@@ -14,41 +15,41 @@ async function readFromFS (filename){
 }
 
 
-var filename = './assets/sample-event.xml';
-var gwetObjTemplate = {event: {event_id: '$.Online_Event.Event.Event_ID._text'}};
+var filename = './assets/sample-contact.xml';
 var sfmcConfig = require('config').get('country.AU');
 var country = 'AU'
 
 function createEvent(event, context, callback){
     var addRowToDE = sfmcConnector.connect(sfmcConfig, addRowOp);
-    readFromFS(filename)
-    .then(function (xmlContent) {
-        let parseObj = gwetConnector.parse(xmlContent)
-                                           (gwetXmlParser)
-                                           (gwetObjectTransformation)
-                                           (gwetObjTemplate);
-        let addResult = addRowToDE(parseObj);
-        const response = {
-          statusCode: 200,
-          body: JSON.stringify({
-            message: `parseObj: ${JSON.stringify(parseObj)}, addResult: ${addResult}`,
-            input: event,
-          })
-        };
-        callback(null, response);    
-    });
+    let xmlContent = event.body;
+    let parseObj = gwetConnector.parse(xmlContent)
+                                        (gwetXmlParser)
+                                        (gwetObjectTransformation)
+                                        (gwetObjTemplate);
+    // let addResult = addRowToDE(parseObj);
+    const response = {
+      statusCode: 200,
+      body: { //JSON.stringify({
+        //message: `parseObj: ${JSON.stringify(parseObj)}`,
+        input: parseObj,
+      }// })
+    };
+    callback(null, response);    
 }
 
 //Test Run
-let event = {};
-let context = {};
+var event = {};
+var context = {};
 function callback (err, response){
   if (err){
     throw new Error (err);
   }
-  console.log(JSON.stringify(response));
+  console.log(JSON.stringify(response.body));
 }
-createEvent(event, context, callback);
 
+readFromFS(filename).then(function (xmlContent){
+  event.body = xmlContent;
+  createEvent(event, context, callback);
+});
 
 module.exports = { createEvent }
