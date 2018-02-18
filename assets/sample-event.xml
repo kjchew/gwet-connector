@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Online_Event>
+  <Event Event_No="1" Event="SEMERGEN">
+    <Event_ID>1402180001</Event_ID>
+    <Event_Name>GWET Deployment</Event_Name>
+    <Country_Name>SG</Country_Name>
+    <LanguageCode>en_sg</LanguageCode>
+    <Date>26/06/2017</Date>
+    <To_Date>26/06/2017</To_Date>
+    <Start_Time>00:00:00</Start_Time>
+    <End_Time>00:00:00</End_Time>
+    <TimeZone>Hora española (excepto Canarias)</TimeZone>
+    <Event_Reg_URL>reg url</Event_Reg_URL>
+    <Event_URL>event url</Event_URL>
+    <Full_Description_HTML>Inventaion ....???!!!</Full_Description_HTML>
+    <Survey_Link>survey url</Survey_Link>
+    <Event_Type>eCME</Event_Type>
+    <eCME_Credited>false</eCME_Credited>
+    <ICSURL>ICS Invite</ICSURL>
+    <CustType>
+      <CustType CustType="CustType_38">
+        <CustTypeID>38</CustTypeID>
+        <CustType>Enfermera</CustType>
+      </CustType>
+      <CustType CustType="CustType_39">
+        <CustTypeID>39</CustTypeID>
+        <CustType>Farmacéutico</CustType>
+      </CustType>
+      <CustType CustType="CustType_35">
+        <CustTypeID>35</CustTypeID>
+        <CustType>Médico General</CustType>
+      </CustType>
+    </CustType>
+    <Pathology>
+      <Pathology Pathology="">
+        <PathologyID>0</PathologyID>
+        <Pathology />
+      </Pathology>
+    </Pathology>
+    <Specialty>
+      <Specialty Specialty="">
+        <SpecialtyID>0</SpecialtyID>
+        <SpecialtyCode />
+        <Specialty />
+      </Specialty>
+    </Specialty>
+    <Agendas>
+      <Agenda Agenda="Agenda_33909">
+        <Agenda_ID>33909</Agenda_ID>
+        <Title>Test</Title>
+        <Agenda_Starttime>26/06/2017 08:00:00</Agenda_Starttime>
+        <Speakers>
+          <Speaker Speaker="Speaker_1582">
+            <Speaker_ID>1582</Speaker_ID>
+            <Speaker_Order>1</Speaker_Order>
+            <Speaker_Name>Ms Test Speaker 1</Speaker_Name>
+            <Speaker_Other_information />
+            <Speaker_Additional_information>Additional information - Agenda only
+&lt;br/&gt;(Ref# 28)</Speaker_Additional_information>
+            <Speaker_Biography>xxxxxxx xxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxx xxxxx &lt;br /&gt;</Speaker_Biography>
+            <Speaker_Short_Description>Short Description 
+&lt;br/&gt;(Ref# 26)
+&lt;br/&gt;xxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxxxxx xxxxxxxx xxxxxxxxxx xxxxxxxx xxxxxxxxxx
+&lt;br/&gt;xxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxxxxx xxxxxxxx xxxxxxxxxx xxxxxxxx</Speaker_Short_Description>
+            <Speaker_Image>http://uat.webcast-editor-tool3.msd.com/filesdownload/SpeakersImages/no_image.gif</Speaker_Image>
+            <Speaker_Biography_URL />
+            <Speaker_Biography_File />
+          </Speaker>
+        </Speakers>
+      </Agenda>
+    </Agendas>
+    <Speaker_Orders>
+      <Speaker_Order Speaker="Speaker_1582">
+        <Speaker_ID>1582</Speaker_ID>
+        <Speaker_Name>Ms Test Speaker 1</Speaker_Name>
+        <Speaker_Order>1</Speaker_Order>
+        <Speaker_Other_information />
+        <Speaker_Additional_information>Additional information - Agenda only
+&lt;br/&gt;(Ref# 28)</Speaker_Additional_information>
+        <Speaker_Biography>xxxxxxx xxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxx xxxxx &lt;br /&gt;</Speaker_Biography>
+        <Speaker_Short_Description>Short Description 
+&lt;br/&gt;(Ref# 26)
+&lt;br/&gt;xxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxxxxx xxxxxxxx xxxxxxxxxx xxxxxxxx xxxxxxxxxx
+&lt;br/&gt;xxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxxxxx xxxxxxxx xxxxxxxxxx xxxxxxxx</Speaker_Short_Description>
+        <Speaker_Image>http://uat.webcast-editor-tool3.msd.com/filesdownload/SpeakersImages/no_image.gif</Speaker_Image>
+        <Speaker_Biography_URL />
+        <Speaker_Biography_File />
+      </Speaker_Order>
+    </Speaker_Orders>
+  </Event>
+</Online_Event>
