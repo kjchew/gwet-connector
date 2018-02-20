@@ -34,7 +34,7 @@ let gwetTemplate = {
         event_type: constructEventColumn('Event_Type'),
         ecme_credited: constructEventColumn('eCME_Credited'),
         calendar_invite: constructEventColumn('ICSURL'),
-        reference_number_of_course: constructEventColumn('Event_ID'),
+        reference_number_of_course: constructEventColumn('Event_ID')
     },
     agendas: {
         event_id: constructEventColumn('Event_ID'),

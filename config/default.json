@@ -1,4 +1,7 @@
 {
+    "system":{
+        "log_level": "debug"
+    },
     "country": {
         "AU": {
             "businessUnit": {

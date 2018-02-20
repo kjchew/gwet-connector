@@ -15,7 +15,7 @@ async function readFromFS (filename){
 }
 
 
-var filename = './assets/sample-contact.xml';
+var filename = './assets/sample-event.xml';
 var sfmcConfig = require('config').get('country.AU');
 var country = 'AU'
 
@@ -40,11 +40,12 @@ function createEvent(event, context, callback){
 //Test Run
 var event = {};
 var context = {};
+var logger = require('./lib/logger').consolelog;
 function callback (err, response){
   if (err){
     throw new Error (err);
   }
-  console.log(JSON.stringify(response.body));
+  logger.debug(response.body);
 }
 
 readFromFS(filename).then(function (xmlContent){
